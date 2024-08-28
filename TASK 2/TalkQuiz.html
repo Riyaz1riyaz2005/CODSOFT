@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform - Take a Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Take a Quiz</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="CreateQuiz">Create a Quiz</a>
+            <a href="TalkQuiz">Take a Quiz</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Quiz Title: Sample Quiz</h2>
+            <form action="submit-answers" method="POST">
+                <div class="question">
+                    <h3>Question 1: What is the capital of France?</h3>
+                    <input type="radio" id="q1a" name="q1" value="A">
+                    <label for="q1a">A. Paris</label><br>
+                    <input type="radio" id="q1b" name="q1" value="B">
+                    <label for="q1b">B. London</label><br>
+                    <input type="radio" id="q1c" name="q1" value="C">
+                    <label for="q1c">C. Berlin</label><br>
+                    <input type="radio" id="q1d" name="q1" value="D">
+                    <label for="q1d">D. Madrid</label><br>
+                </div>
+                
+                <div class="question">
+                    <h3>Question 2: What is the square root of 16?</h3>
+                    <input type="radio" id="q2a" name="q2" value="A">
+                    <label for="q2a">A. 2</label><br>
+                    <input type="radio" id="q2b" name="q2" value="B">
+                    <label for="q2b">B. 4</label><br>
+                    <input type="radio" id="q2c" name="q2" value="C">
+                    <label for="q2c">C. 6</label><br>
+                    <input type="radio" id="q2d" name="q2" value="D">
+                    <label for="q2d">D. 8</label><br>
+                </div>
+                
+                <button type="submit" class="button">Submit Answers</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Quiz Platform</p>
+    </footer>
+</body>
+</html>

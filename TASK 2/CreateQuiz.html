@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform - Create a Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Create a Quiz</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="CreateQuiz.html">Create a Quiz</a>
+            <a href="TalkQuiz.html">Take a Quiz</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Quiz Details</h2>
+            <form action="submit-quiz" method="POST">
+                <label for="quiz-title">Quiz Title:</label>
+                <input type="text" id="quiz-title" name="quizTitle" required>
+                
+                <div id="questions-container">
+                    <h3>Question 1</h3>
+                    <label for="question-1">Question:</label>
+                    <input type="text" id="question-1" name="questions[]" required>
+                    
+                    <label for="option-1-a">Option A:</label>
+                    <input type="text" id="option-1-a" name="options[0][]" required>
+                    
+                    <label for="option-1-b">Option B:</label>
+                    <input type="text" id="option-1-b" name="options[0][]" required>
+                    
+                    <label for="option-1-c">Option C:</label>
+                    <input type="text" id="option-1-c" name="options[0][]" required>
+                    
+                    <label for="option-1-d">Option D:</label>
+                    <input type="text" id="option-1-d" name="options[0][]" required>
+                    
+                    <label for="correct-1">Correct Answer:</label>
+                    <select id="correct-1" name="correctAnswers[]" required>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                
+                <button type="button" id="add-question">Add Another Question</button>
+                <button type="submit" class="button">Submit Quiz</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Quiz Platform</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

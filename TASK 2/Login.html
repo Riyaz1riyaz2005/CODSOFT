@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="CreateQuiz">Create a Quiz</a>
+            <a href="TalkQuiz">Take a Quiz</a>
+            <a href="register">Register</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <form action="Login" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="button">Login</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Quiz Platform</p>
+    </footer>
+</body>
+</html>
